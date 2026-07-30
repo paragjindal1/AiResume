@@ -14,6 +14,10 @@ from PIL import Image
 import pandas as pd
 import numpy as np
 
+
+
+st.set_page_config(layout="wide")
+
 #API KEYS
 GOOGLE_API_KEY = "AQ.Ab8RN6IHcbtqA-uIhDbvSyUJICH5A556aDOzMYnZfTOn2P6a3g"
 GROQ_API_KEY = "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"
