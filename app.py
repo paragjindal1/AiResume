@@ -52,6 +52,11 @@ profile_op = ["Data Analysts", "AI Engineer",
 profile = st.sidebar.multiselect("Select Job Profile",
                                  options = profile_op)
 
+
+# =========GET USER INFO=============
+st.markdown("""### GET USER INFO""")
+user_info = st.text_area("""Write your Resume Description: """)
+
 # google model
 model = ChatGoogleGenerativeAI(
     model = 'gemini-3-flash-preview',
