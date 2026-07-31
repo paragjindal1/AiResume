@@ -111,9 +111,7 @@ def main_agent(agent,query):
     with open('prompt.txt','w') as f:
       f.write(detail_prompt)
 
-    user_details = f"""Below Given is a user details generate resume based on the chat ,if not given
-    Default Resume: python developer
-    user details:{query}"""
+    user_details = query
 
     final_prompt = prompt + detail_prompt + user_details
 
