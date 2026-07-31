@@ -20,9 +20,9 @@ st.title("AI RESUME GENERATOR")
 
 st.write("""this app helps user to build customized Proffessinal resume with latest job apply links """)
 
-st.image("bg.png")
+st.image("https://raw.githubusercontent.com/paragjindal1/AiResume/refs/heads/main/bg.png")
 st.sidebar.title("Fill Important Detail")
-st.sidebar.image("bg.png")
+st.sidebar.image("https://raw.githubusercontent.com/paragjindal1/AiResume/refs/heads/main/bg.png")
 
 #API KEYS
 GOOGLE_API_KEY = st.sidebar.text_input("Gemini-API",type="password")
