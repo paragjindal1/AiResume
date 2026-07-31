@@ -36,6 +36,10 @@ if not all(all_API):
    st.stop()
 elif all(all_API):
    st.success("API KEYS LOADED SUCCESFULLY")
+   model = ChatGoogleGenerativeAI(
+    model = 'gemini-3-flash-preview',
+    google_api_key = GOOGLE_API_KEY
+   )
 else:
    st.info("Pass all API-KEYS")
 
@@ -58,10 +62,7 @@ st.markdown("""### GET USER INFO""")
 user_info = st.text_area("""Write your Resume Description: """)
 
 # google model
-model = ChatGoogleGenerativeAI(
-    model = 'gemini-3-flash-preview',
-    google_api_key = GOOGLE_API_KEY
-)
+
 
 #tool for search latest news jib
 
